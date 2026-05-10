@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Corpus data (downloaded, not versioned)
+data/raw/
+data/processed/
+
+# Model checkpoints
+*.pth
+*.pt
+checkpoints/
+
+# Colab artifacts
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+
+# Secrets
+.env
+
+# Local scratch
+scratch_*.py
+smoke_test.py
