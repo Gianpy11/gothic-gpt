@@ -22,3 +22,13 @@ class Tokenizer:
             data = json.load(f)
         
         return cls(data["chars"])
+    
+    def encode(self, s: str) -> list[int]:
+        return [self.char_to_id[c] for c in s]
+    
+    def decode(self, ids: list[int]) -> str:
+        return "".join([self.id_to_char[i] for i in ids])
+    
+    @property
+    def vocab_size(self) -> int:
+        return len(self.chars)
