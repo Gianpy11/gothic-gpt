@@ -57,7 +57,7 @@ def strip_editorial_brackets(text: str) -> str:
     return text
 
 def strip_front_matter(text: str) -> str:
-    """We are not interested to front matter (title pages, copyright). Finding the first 
+    """There is no interest to front matter (title pages, copyright). Finding the first 
     line that looks like real prose: long enough and containing lowercase letters."""
     lines = text.split("\n")
     for i, line in enumerate(lines):
