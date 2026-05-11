@@ -1,3 +1,11 @@
+"""
+Gutenberg Corpus Preprocessor
+
+This script reads a directory of raw text files downloaded from Project Gutenberg,
+removes boilerplate (header, transcriber notes, licenses), normalizes punctuations and
+concatenates the cleaned text into a single corpus.txt file.
+"""
+
 from pathlib import Path
 import re
 
