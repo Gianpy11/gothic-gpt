@@ -6,6 +6,12 @@ removes boilerplate (header, transcriber notes, licenses), normalizes punctuatio
 concatenates the cleaned text into a single corpus.txt file.
 """
 
+"""
+The text is mostly ASCII, but we read and write using UTF-8 as a precaution
+to safely handle any special characters. Aiming for an ASCII-like subset
+helps keep the model's vocabulary small, readable and efficient.
+"""
+
 from pathlib import Path
 import re
 
